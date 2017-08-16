@@ -1,8 +1,9 @@
 doctype html
 html
-
-  //- 
-    To be extended by Home/Landing, Pricing, and Contact pages.
+  
+  //-
+    To be extended by all Dashboard pages
+    Note to self -- Exercise information pages need a home.
   
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -10,21 +11,8 @@ html
     link(rel='stylesheet', href='/bootstrap/css/superhero-bootstrap.min.css')
     <!--link(rel='stylesheet', href='/bootstrap/css/united-bootstrap.min.css')-->
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
       
-  body        
-    nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse
-      a.navbar-brand(href='/') trainr 
-      button.navbar-toggler.navbar-toggler-right.collapsed(type='button', data-toggle='collapse', data-target='#navbarContent', aria-controls='navbarContent', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-
-      #navbarContent.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto
-          li.nav-item
-            a.nav-link(href='/pricing') Pricing
-          li.nav-item
-            a.nav-link(href='/contact') Contact Us
-    
+  body
     .container
       block content
       
@@ -83,7 +71,7 @@ html
           .col-xs-12
             small &copy; Austin Hicks 2017
                     
-    script(src='/javascripts/jquery-3.2.1.min.js')
-    script(src='/bootstrap/js/bootstrap.min.js')
+    script(src='javascripts/jquery-3.2.1.min.js')
+    script(src='bootstrap/js/bootstrap.min.js')
       
     

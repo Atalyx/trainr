@@ -1,11 +1,16 @@
 /* GET 'home' or 'landing' page */
 module.exports.landing = function(req, res) {
-  res.render('index', { title: 'trainr'} );
+  res.render('temp-index', { title: 'trainr'} );
 };
 
 /* GET 'pricing' page */
 module.exports.pricing = function(req, res) {
-  res.render('index', { title: 'Pricing'} );
+  res.render('temp-index', { title: 'Pricing'} );
+};
+
+/* GET 'contact' page */
+module.exports.contact = function(req, res) {
+  res.render('temp-index', { title: 'Contact'} );
 };
 
 /* GET 'exercise list' page */
