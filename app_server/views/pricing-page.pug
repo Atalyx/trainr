@@ -1,0 +1,80 @@
+extends layouts/info-layout.pug
+
+block content
+  .container(style='padding-top: 25px;')
+    .jumbotron
+      h1.display-3 3 Pricing Options
+      p.lead Pick what works for you.
+  
+  .container
+    table.table.table-striped.table-bordered
+      thead
+        tr
+          th
+          th.text-center.align-middle.text-warning
+            span.fa.fa-user-circle.fa-5x 
+            | <br /><br />Free
+          th.text-center.align-middle.text-info
+            span.fa.fa-users.fa-5x 
+            | <br /><br />Basic
+          th.text-center.align-middle.text-success
+            span.fa.fa-suitcase.fa-5x 
+            | <br /><br />Pro
+      tbody
+        tr
+          td.text-center.align-middle Feature One
+          td.text-center.align-middle.text-warning
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-info
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr
+          td.text-center.align-middle Feature Two
+          td.text-center.align-middle.text-warning
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-info
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr
+          td.text-center.align-middle Feature Three
+          td.text-center.align-middle.text-warning
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-info
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr
+          td.text-center.align-middle Feature Four
+          td.text-center.align-middle.text-danger
+            span.fa.fa-times.fa-5x
+          td.text-center.align-middle.text-info
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr
+          td.text-center.align-middle Feature Five
+          td.text-center.align-middle.text-danger
+            span.fa.fa-times.fa-5x
+          td.text-center.align-middle.text-info
+            span.fa.fa-check-square-o.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr
+          td.text-center.align-middle Feature Six
+          td.text-center.align-middle.text-danger
+            span.fa.fa-times.fa-5x
+          td.text-center.align-middle.text-danger
+            span.fa.fa-times.fa-5x
+          td.text-center.align-middle.text-success
+            span.fa.fa-check-square-o.fa-5x
+        tr.table-active
+          td.text-center.align-middle Monthly Price
+          td.text-center.align-middle.text-warning 
+            h2 Free
+          td.text-center.aling-middle.text-info 
+            h2 $4.99
+          td.text-center.aling-middle.text-success 
+            h2 $14.99
+        

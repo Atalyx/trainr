@@ -5,7 +5,7 @@ module.exports.landing = function(req, res) {
 
 /* GET 'pricing' page */
 module.exports.pricing = function(req, res) {
-  res.render('temp-index', { title: 'Pricing'} );
+  res.render('pricing-page', { title: 'Pricing'} );
 };
 
 /* GET 'contact' page */
