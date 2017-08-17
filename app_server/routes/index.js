@@ -8,6 +8,9 @@ var ctrlDash = require('../controllers/dashboard');
 router.get('/', ctrlInfo.landing);
 router.get('/pricing', ctrlInfo.pricing);
 router.get('/contact', ctrlInfo.contact);
+router.get('/features', ctrlInfo.features);
+
+/* These need their own category at some point */
 router.get('/exercises', ctrlInfo.exercises);
 router.get('/exercises/exercise-name', ctrlInfo.exerciseInfo);        // This will become a specific exercise name
 router.get('/exercises/new', ctrlInfo.exerciseNew);

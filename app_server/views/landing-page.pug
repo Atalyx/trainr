@@ -1,0 +1,74 @@
+extends layouts/info-layout.pug
+
+block content
+  
+  .fluid-container
+    .jumbotron.jumbotron-fluid.landing-header
+      .container
+        .row.header-overlay
+          .col-xs-12.col-lg-6.text-right
+            h1.display-3 We're Going Places.
+            p.lead Want to be in the loop? Join our mailing list today!
+          .col-xs-12.col-lg-6.vertical-center
+            .form-group
+              .input-group.input-group-lg 
+                input.form-control(type="text", id="inputEmail", placeholder="email@example.com")
+                span.input-group-btn
+                  button.btn.btn-primary(type='button') Join!
+
+  .container
+    .row
+      .col-xs-12.col-lg-4
+        .card
+          h3.card-title.text-center Selling Point One
+          .card-block.text-center
+            span.fa.fa-area-chart.fa-5x
+            p.card-text <br />Things about the selling point. Multiple
+            | lines of things can go here. I'm just typing things in order
+            | to show some things.
+          .card-footer
+            a.btn.btn-primary.btn-block(href='/features') Learn More. . .
+      .col-xs-12.col-lg-4
+        .card
+          h3.card-title.text-center Selling Point Two
+          .card-block.text-center
+            span.fa.fa-cogs.fa-5x
+            p.card-text <br />Things about the selling point. Multiple
+            | lines of things can go here. I'm just typing things in order
+            | to show some things.
+          .card-footer
+            a.btn.btn-primary.btn-block(href='/features') Learn More. . .
+      .col-xs-12.col-lg-4
+        .card
+          h3.card-title.text-center Selling Point Three
+          .card-block.text-center
+            span.fa.fa-mobile.fa-5x
+            p.card-text <br />Things about the selling point. Multiple
+            | lines of things can go here. I'm just typing things in order
+            | to show some things. 
+          .card-footer
+            a.btn.btn-primary.btn-block(href='/features') Learn More. . .
+
+  .fluid-container(style='padding-top: 35px;')
+    .jumbotron.jumbotron-fluid.landing-login.vertical-center
+      .container
+        .row.header-overlay
+          .col-xs-12.col-lg-6.text-right
+            h1.display-3 Are you a tester?
+            p.lead Log in here.
+          .col-xs-12.col-lg-4.vertical-center.push-lg-1
+            .form-group
+              .input-group
+                .input-group-addon
+                  span.fa.fa-envelope-o
+                input.form-control(type='text', id='loginEmail', placeholder='email@example.com')
+              .input-group
+                .input-group-addon
+                  span.fa.fa-key
+                input.form-control(type='text', id='loginPassword', placeholder='Password')
+              .input-group
+                button.btn.btn-primary.btn-block(type='submit') Log In
+                
+            
+            
+          

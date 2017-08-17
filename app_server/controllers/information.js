@@ -1,6 +1,6 @@
 /* GET 'home' or 'landing' page */
 module.exports.landing = function(req, res) {
-  res.render('temp-index', { title: 'trainr'} );
+  res.render('landing-page', { title: 'trainr'} );
 };
 
 /* GET 'pricing' page */
@@ -11,6 +11,11 @@ module.exports.pricing = function(req, res) {
 /* GET 'contact' page */
 module.exports.contact = function(req, res) {
   res.render('temp-index', { title: 'Contact'} );
+};
+
+/* GET 'features' page */
+module.exports.features = function(req, res) {
+  res.render('temp-index', { title: 'Features'} );
 };
 
 /* GET 'exercise list' page */
