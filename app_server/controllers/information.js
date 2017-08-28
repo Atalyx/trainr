@@ -15,7 +15,7 @@ module.exports.contact = function(req, res) {
 
 /* GET 'features' page */
 module.exports.features = function(req, res) {
-  res.render('temp-index', { title: 'Features'} );
+  res.render('features', { title: 'Features'} );
 };
 
 /* GET 'exercise list' page */
