@@ -28,64 +28,8 @@ html
             a.nav-link(href='/contact') Contact Us
     
     block content
-        
-    .container(style='padding-top: 25px;')  
-      footer
-        .row
-          .col-xs-12.col-md-4
-            h6 Information Pages
-            ul
-              li
-                a(href='/') Home/Landing Page
-              li
-                a(href='/features') Features
-              li
-                a(href='/pricing') Pricing
-              li
-                a(href='/contact') Contact
-              li
-                a(href='/exercises') Exercise List
-              li
-                a(href='/exercises/exercise-name') Exercise Details
-              li
-                a(href='/exercises/new') New Exercise
-          .col-xs-12.col-md-4
-            h6 Dashboard Pages
-            ul
-              li
-                a(href='/dashboard') Dashboard Home
-              li
-                a(href='/dashboard/clients') Client List
-              li
-                a(href='/dashboard/clients/client-name') Client Details
-              li
-                a(href='/exercises/clients/new') New Client
-              li
-                a(href='/dashboard/assessments') Assessment List
-              li
-                a(href='/dashboard/assessments/assessment-name') Assessment Details
-              li
-                a(href='/dashboard/assessments/new') New Assessment
-              li
-                a(href='/dashboard/workouts') Workout List
-              li
-                a(href='/dashboard/workouts/workout-name') Workout Details
-              li
-                a(href='/dashboard/workouts/new') New Workout
-          .col-xs-12.col-md-4
-            h6 Account Management Pages
-            ul
-              li
-                a(href='/account') Account Management Home
-              li
-                a(href='/account/user') User Profile
-              li
-                a(href='/register') Create Account
-              li
-                a(href='/login') Login
-        .row
-          .col-xs-12
-            small &copy; Austin Hicks 2017
+    
+    include site-map-footer.pug
                     
     script(src='/javascripts/jquery-3.2.1.min.js')
     script(src='/bootstrap/js/bootstrap.min.js')
