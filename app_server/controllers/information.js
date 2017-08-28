@@ -10,7 +10,7 @@ module.exports.pricing = function(req, res) {
 
 /* GET 'contact' page */
 module.exports.contact = function(req, res) {
-  res.render('temp-index', { title: 'Contact'} );
+  res.render('contact-us-page', { title: 'Contact'} );
 };
 
 /* GET 'features' page */

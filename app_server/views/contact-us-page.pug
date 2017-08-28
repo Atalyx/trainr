@@ -1,0 +1,50 @@
+extends layouts/info-layout.pug
+
+block content
+  
+  .container(style='padding-top: 25px;')
+    .row
+      .col-lg-8.col-lg-offset-2
+        h1 Questions or Concerns?
+        p.lead Feel free to contact us and we'll do our best to get back to you.
+        
+        form
+          .row
+            .col-md-6
+              .form-group
+                label First Name *
+                input.form-control(placeholder='Please enter your first name *', required='required', data-error='First name is required.')
+                .help-block.with-errors
+            .col-md-6
+              .form-group
+                label Last Name *
+                input.form-control(placeholder='Please enter your last name *', required='required', data-error='Last name is required.')
+                .help-block.with-errors
+          .row
+            .col-md-6
+              .form-group
+                label Email *
+                input.form-control(placeholder='Please enter your first name *', required='required', data-error='First name is required.')
+                .help-block.with-errors
+            .col-md-6
+              .form-group
+                label Gym
+                input.form-control(placeholder='Please enter the gym you work at')
+                .help-block.with-errors
+          .row
+            .col-md-12
+              .form-group
+                label Message *
+                textarea.form-control(placeholder='Message for us *', rows="4", required="required", data-error="Please, leave us a message.")
+                .help-block.with-errors
+            .col.md-4
+              .form-check
+                label.form-check.label
+                  input.form-check-input(type='checkbox')
+                  |  Add me to your awesome mailing list.
+            .col-md-8
+              input.btn.btn-success.btn-send.pull-right(type='submit', value='Send Message')
+          .row
+            .col-md-12
+              p.text-muted.pull-right #[strong *] These fields are required.
+  
