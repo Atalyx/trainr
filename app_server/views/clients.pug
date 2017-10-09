@@ -1,1 +1,68 @@
 extends layouts/dash-layout.pug
+
+block content
+  .row.my-4
+    .col-lg-3.col-md-4
+      .card
+        .card-header.bg-info
+          .row
+            h4.text-uppercase.text-white.card-title Recent Items &nbsp;
+        .card-body
+          p.card-text Task 1
+          p.card-text Castiel
+          p.card-text Upper Body #3
+      br
+      .input-group
+        span.input-group-addon
+          .i.fa.fa-search
+        input.form-control(type="text")
+      br
+      button.btn.btn-block.btn-info
+        .i.fa.fa-users &nbsp;
+        | Add Client
+    .col-lg-9.col-md-8
+      .table-responsive
+        table.table.table-striped
+          thead.thead-inverse
+            tr
+              th #
+              th Name
+              th Status
+          tbody
+            tr
+              td 1,001
+              td John Doe
+              td Active
+            tr
+              td 1,002
+              td Jane Doe
+              td Active
+            tr
+              td 1,003
+              td Jimmy Smith
+              td Inactive
+            tr
+              td 1,004
+              td Tina Fey 
+              td Active
+            tr
+              td 1,005
+              td Lilo Stitch
+              td Inactive
+            tr
+              td 1,006
+              td Dean Winchester
+              td Active
+            tr
+              td 1,007
+              td Sam Winchester
+              td Active
+            tr
+              td 1,008
+              td Castiel
+              td Lead
+            tr
+              td 1,009
+              td John Winchester
+              td Lead
+  <!--/row-->
