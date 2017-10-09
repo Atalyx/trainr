@@ -20,7 +20,7 @@ module.exports.features = function(req, res) {
 
 /* GET 'exercise list' page */
 module.exports.exercises = function(req, res) {
-  res.render('index', { title: 'Exercises'} );
+  res.render('exercises', { title: 'Exercises'} );
 };
 
 /* GET 'exercise info' page */

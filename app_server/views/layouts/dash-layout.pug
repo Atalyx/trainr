@@ -8,16 +8,23 @@ html
   head
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel='stylesheet', href='/bootstrap/css/superhero-bootstrap.min.css')
+    <!--link(rel='stylesheet', href='/bootstrap/css/superhero-bootstrap.min.css')-->
     <!--link(rel='stylesheet', href='/bootstrap/css/united-bootstrap.min.css')-->
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/dash-style.css')
+    link(rel='stylesheet', href='/font-awesome/css/font-awesome.min.css')
       
   body
-    .container
-      block content
-      
+    include ../includes/dash-top-nav.pug
+    #main.container-fluid
+      .row.row-offcanvas.row-offcanvas-left
+        include ../includes/dash-side-nav.pug
+        .col-md-9.col-lg-10.main
+          h1.display-4.d-none.d-sm-block #{title}
+          block content 
+    .container 
       include ../includes/site-map-footer.pug
-                    
+    script(src='javascripts/dash-sidebar-script.js')
     script(src='javascripts/jquery-3.2.1.min.js')
     script(src='bootstrap/js/bootstrap.min.js')
       

@@ -1,0 +1,126 @@
+extends layouts/dash-layout.pug
+
+block content
+  <!-- Colorful Card Rows -->
+  .row.mb-3
+    .col-xl-3.col-sm-6
+      .card.bg-success.text-white.h-100
+        .card-body.bg-success
+          .rotate
+            i.fa.fa-user.fa-3x
+          h6.text-uppercase My Next Client
+          h1.display-4 John Doe
+          button.btn.btn-outline-primary.btn-block Plan Workout
+    .col-xl-3.col-sm-6
+      .card.text-white.bg-danger.h-100
+        .card-body.bg-danger
+          .rotate
+            i.fa.fa-list.fa-3x
+          h6.text-uppercase Some sort of function
+          h1.display-4 87
+    .col-xl-3.col-sm-6
+      .card.text-white.bg-info.h-100
+        .card-body.bg-info
+          .rotate
+            i.fa.fa-twitter.fa-3x
+          h6.text-uppercase Social functions
+          h1.display-4 125
+    .col-xl-3.col-sm-6
+      .card.text-white.bg-warning.h-100
+        .card-body.bg-warning
+          .rotate
+            i.fa.fa-share.fa-3x
+          h6.text-uppercase Another function
+          h1.display-4 36
+  <!-- /Colorful Card Rows -->
+  hr
+  .row.my-4
+    .col-lg-3.col-md-4
+      .card
+        .card-header.bg-danger
+          .row
+            h4.text-uppercase.text-white.card-title High Priority &nbsp;
+            span.badge.badge-info.badge-pill 3
+        .card-body
+          p.card-text Task 1
+          p.card-text Task 2
+          p.card-text Task 3
+      br
+      .card
+        .card-header.bg-info
+          .row
+            h4.text-uppercase.text-white.card-title Recent Items &nbsp;
+        .card-body
+          p.card-text Item 1
+          p.card-text Item 2
+          p.card-text Item 3
+    .col-lg-9.col-md-8
+      .table-responsive
+        table.table.table-striped
+          thead.thead-inverse
+            tr
+              th #
+              th Task Name
+              th Category
+              th Priority
+          tbody
+            tr
+              td 1,001
+              td Task 1
+              td Clients
+              td High
+            tr
+              td 1,002
+              td Task 2
+              td Workouts
+              td Low
+            tr
+              td 1,003
+              td Task 3
+              td Clients
+              td Medium
+            tr
+              td 1,004
+              td Task 4
+              td Assessments
+              td Medium
+            tr
+              td 1,005
+              td Task 5
+              td Clients
+              td High
+            tr
+              td 1,006
+              td Task 6
+              td Admin
+              td Low
+            tr
+              td 1,007
+              td Task 7
+              td Clients
+              td High
+            tr
+              td 1,008
+              td Task 8
+              td Gym
+              td Medium
+            tr
+              td 1,009
+              td Task 9
+              td Clients
+              td Low
+  <!--/row-->
+  hr
+  .row.placeholders.mb-3
+    .col-6.col-sm-3.placeholder.text-center 
+      img.mx-auto.img-fluid.rounded-circle(src="//placehold.it/200/dddddd/fff?text=1" alt="Generic placeholder thumbnail")
+      h4 Not sure
+    .col-6.col-sm-3.placeholder.text-center 
+      img.mx-auto.img-fluid.rounded-circle(src="//placehold.it/200/e4e4e4/fff?text=2"  alt="Generic placeholder thumbnail") 
+      h4 what else
+    .col-6.col-sm-3.placeholder.text-center 
+      img.mx-auto.img-fluid.rounded-circle(src="//placehold.it/200/d6d6d6/fff?text=3" alt="Generic placeholder thumbnail")
+      h4 to have on
+    .col-6.col-sm-3.placeholder.text-center 
+      img.center-block.img-fluid.rounded-circle(src="//placehold.it/200/e0e0e0/fff?text=4" alt="Generic placeholder thumbnail") 
+      h4 this page. 
