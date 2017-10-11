@@ -24,7 +24,7 @@ router.get('/dashboard/assessments', ctrlDash.assessments);
 router.get('/dashboard/assessments/assessment-name', ctrlDash.assessmentInfo);    // This will become a specific assessment name
 router.get('/dashboard/assessments/new', ctrlDash.assessmentNew);
 router.get('/dashboard/workouts', ctrlDash.workouts);
-router.get('/dashboard/workouts/workouts-name', ctrlDash.workoutInfo);    // This will become a specific workout name
+router.get('/dashboard/workouts/workout-name', ctrlDash.workoutInfo);    // This will become a specific workout name
 router.get('/dashboard/workouts/new', ctrlDash.workoutNew);
 
 /* Account Management Pages */

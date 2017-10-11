@@ -3,20 +3,12 @@ extends layouts/dash-layout.pug
 block content
   .row.my-4
     .col-lg-3.col-md-4
-      .card
-        .card-header.bg-info
-          .row
-            h4.text-uppercase.text-white.card-title Recent Items &nbsp;
-        .card-body
-          p.card-text Task 1
-          p.card-text Castiel
-          p.card-text Upper Body #3
-      br
       .input-group
         span.input-group-addon
           .i.fa.fa-search
         input.form-control(type="text")
-      br
+      include includes/dash-recent-items.pug
+      hr
       button.btn.btn-block.btn-info
         .i.fa.fa-bar-chart &nbsp;
         | New Workout
@@ -31,7 +23,8 @@ block content
           tbody
             tr
               td 1,001
-              td First Time Client
+              td
+                a(href='/dashboard/assessments/assessment-name') First Time Client
               td General Health
             tr
               td 1,002

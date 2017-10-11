@@ -1,0 +1,95 @@
+//-
+  Lots of things are broken here. Tab stuff is totally not working. Oh well, it's just a layout for now.
+
+extends layouts/dash-layout.pug
+
+block content
+  .row.my-4
+    .col-lg-3.col-md-4
+      .card
+        .card-header.bg-info
+          h4.text-uppercase.text-white.card-title Benchpress
+        .card-body
+          img.mx-auto.img-fluid.img-circle.d-block(alt="avatar" src="http://via.placeholder.com/150x150")
+          h6.mt-2 Upload a different photo
+          label.custom-file
+            input#file.custom-file-input(type="file")
+            span.custom-file-control Choose File
+      include includes/dash-recent-items.pug
+    .col-lg-9.col-md-8
+      ul.nav.nav-tabs 
+        li.nav-item
+          a.nav-link.active(href="" data-target="#profile" data-toggle="tab") Exercise Info
+        li.nav-item
+          a.nav-link(href="" data-target="#edit" data-toggle="tab") Edit
+      .tab-content.py-4
+        #profile.tab-pane.active
+          h5.mb-3 Exercise Info
+          .row
+            .col-md-6
+              h6 Category
+              p Upperbody
+              h6 Purpose
+              p Describe a benchpress 
+            .col-md-6
+              h6 Recent Badges
+              a.badge.badge-dark.badge-pill(href="#") simple
+              a.badge.badge-dark.badge-pill(href="#") 5 minute
+              a.badge.badge-dark.badge-pill(href="#") Placeholder
+              a.badge.badge-dark.badge-pill(href="#") Placeholder
+              a.badge.badge-dark.badge-pill(href="#") Placeholder
+              a.badge.badge-dark.badge-pill(href="#") Placeholder 
+              hr
+              <span class="badge badge-primary"><i class="fa fa-user"></i> 5 Contributors</span>
+              <span class="badge badge-success"><i class="fa fa-cog"></i> 3 Likes</span>
+              <span class="badge badge-danger"><i class="fa fa-eye"></i> 452 Views</span>      
+          .col-md-12
+            <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Recent Activity</h5>
+            table.table.table-sm.table-hover.table.striped
+              tbody
+                tr
+                  td
+                    p #[strong Cameron] used this Exercise with #[strong <a href="/dashboard/clients/client-name">Castiel</a>]
+                tr
+                  td
+                    p #[strong You] joined trainr. Welcome!
+        #edit.tab-pane
+          form(role="form")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label First Name
+              .col-lg-9
+                input.form-control(type="text" value="Jane")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label Last Name
+              .col-lg-9
+                input.form-control(type="text" value="Bishop")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label Email
+              .col-lg-9
+                input.form-control(type="email" value="email@email.com")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label Company
+              .col-lg-9
+                input.form-control(type="text" value="")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label Website
+              .col-lg-9
+                input.form-control(type="url" value="")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label Address
+              .col-lg-9
+                input.form-control(type="text" value="Street")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label 
+              .col-lg-9
+                input.form-control(type="text" value="City")
+            .form-group.row
+              lable.col-lg-3.col-form-label.form.control.label 
+              .col-lg-9
+                input.form-control(type="text" value="State")
+            .form-group-row
+              label.col-lg-3.col-form-label.form-control-label
+              .col-lg-9
+                input.btn.btn-secondary(type="reset" value="Cancel")
+                input.btn.btn-primary(type="button" value="Save Changes")
+    

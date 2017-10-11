@@ -10,7 +10,7 @@ module.exports.clients = function(req, res) {
 
 /* GET 'client info' page */
 module.exports.clientInfo = function(req, res) {
-  res.render('index', { title: 'Client Info'} );
+  res.render('client-info', { title: 'Client Info'} );
 };
 
 /* GET 'add client' page */
@@ -25,7 +25,7 @@ module.exports.assessments = function(req, res) {
 
 /* GET 'assessments info' page */
 module.exports.assessmentInfo = function(req, res) {
-  res.render('index', { title: 'Assessment Info'} );
+  res.render('assessment-info', { title: 'Assessment Info'} );
 };
 
 /* GET 'new assessments' page */
@@ -40,7 +40,7 @@ module.exports.workouts = function(req, res) {
 
 /* GET 'workout info' page */
 module.exports.workoutInfo = function(req, res) {
-  res.render('index', { title: 'Workout Info'} );
+  res.render('workout-info', { title: 'Workout Info'} );
 };
 
 /* GET 'workouts' page */

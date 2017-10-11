@@ -25,7 +25,7 @@ module.exports.exercises = function(req, res) {
 
 /* GET 'exercise info' page */
 module.exports.exerciseInfo = function(req, res) {
-  res.render('index', { title: 'Exercise Info'} );
+  res.render('exercise-info', { title: 'Exercise Info'} );
 };
 
 /* GET 'Add Exercise' page */

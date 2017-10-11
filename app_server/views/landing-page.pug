@@ -1,7 +1,7 @@
 extends layouts/info-layout.pug
 
 block content
-  
+
   .fluid-container
     .jumbotron.jumbotron-fluid.landing-header
       .container
@@ -67,8 +67,9 @@ block content
                   span.fa.fa-key
                 input.form-control(type='text', id='loginPassword', placeholder='Password')
               .input-group
-                button.btn.btn-primary.btn-block(type='submit') Log In
+                button.btn.btn-primary.btn-block(data-toggle="modal" data-target="#login-modal") Log In
                 
+
             
             
           
